@@ -199,7 +199,7 @@ public class HelloArActivity extends AppCompatActivity implements GLSurfaceView.
       // Create the texture and pass it to ARCore session to be filled during update().
       backgroundRenderer.createOnGlThread(/*context=*/ this);
 
-      virtualObject.createOnGlThread(/*context=*/ this,  Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/face-texture.png");
+      virtualObject.createOnGlThread(/*context=*/ this,  "models/face-texture.png");
       virtualObject.setMaterialProperties(0.0f, 2.0f, 0.5f, 6.0f);
 
     } catch (IOException e) {
